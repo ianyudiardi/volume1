@@ -14,7 +14,7 @@ public class transactions
     {
         var kembalian = total - bayar;
         Console.WriteLine();
-        Console.WriteLine("Pembayaran" + nota);
+        Console.WriteLine("Pembayaran untuk nota " + nota);
         if (kembalian > 0)
         {
             Console.WriteLine("Pembayaran Kurang");
@@ -25,13 +25,13 @@ public class transactions
             Console.WriteLine("------------------");
             Console.WriteLine("Total: " + total);
             Console.WriteLine("Bayar: " + bayar);
-            Console.WriteLine("Kembali: " + kembalian);
+            Console.WriteLine("Kembali: " + kembalian * -1);
         }
     }
     public void payment(string card, double bayar)
     {
         Console.WriteLine();
-        Console.WriteLine("Pembayaran" + nota);
+        Console.WriteLine("Pembayaran untuk nota " + nota);
         if (card.Length < 14 || card.Length > 14)
         {
             Console.WriteLine("Kartu tidak valid");
@@ -39,7 +39,7 @@ public class transactions
         else
         {
             Console.WriteLine("Pembayaran Debit");
-            Console.WriteLine("S------------------");
+            Console.WriteLine("-------------------");
             Console.WriteLine("No.  " + card);
             Console.WriteLine("Total: " + total);
             Console.WriteLine("Bayar: " + bayar);
