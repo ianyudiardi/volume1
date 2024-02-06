@@ -14,7 +14,7 @@ namespace ConsoleApp1
         {
             var kembalian = total - bayar;
             Console.WriteLine();
-            Console.WriteLine("Pembayaran" + nota);
+            Console.WriteLine("Pembayaran untuk nota " + nota);
             if (kembalian > 0)
             {
                 Console.WriteLine("Pembayaran Kurang");
