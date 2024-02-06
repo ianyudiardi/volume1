@@ -11,9 +11,9 @@ tran1.tanggal = DateTime.Now;
 tran1.total = 5500000;
 
 var tran2 = new transactions();
-tran1.nota = "4202306140002";
-tran1.tanggal = DateTime.Now;
-tran1.total = 7250000;
+tran2.nota = "4202306140002";
+tran2.tanggal = DateTime.Now;
+tran2.total = 7250000;
 
 var cod1 = new cashondelivery();
 cod1.nota = "5202306140003";
